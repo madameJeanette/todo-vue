@@ -16,10 +16,12 @@
              <div class="offset-md-3 col-md-6 mt-3">
                 <ul class="list-group justify-content-center">
                    <li class="row list-group-item border mt-2 col-xs-1" v-for="todo in todoList">
+                     <!-- loop door lijst -->
                       <div class="row align-items-center">
                         <input type="checkbox" v-on:change="toggle(todo)" v-bind:checked="todo.complete" class="col-sm-1 border border-danger">
                         <del v-if="todo.complete" class="col-sm-8">
-                           <h5>{{ todo.name }}</h5>
+                           <h5>{{ todo.name }}</h5> 
+                           <!-- get todo name -->
                         </del>
                         <span v-else class="col-sm-8">
                            <h5>{{ todo.name }}</h5>
