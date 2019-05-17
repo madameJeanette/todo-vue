@@ -6,8 +6,8 @@
 
       <section>
          <div class="row justify-content-center mt-4">
-           <input v-model="inputField" v-on:keyup.enter="addTodo" class="mr-1" placeholder="Todo Item" />
-           <button @click="addTodo" class="btn btn-primary">Add Todo</button>
+           <input v-model="inputField" v-on:keyup.enter="addTodo" class="mr-1" placeholder="Taak" />
+           <button @click="addTodo" class="btn btn-primary">Voeg toe!</button>
         </div>
       </section>
 
@@ -84,13 +84,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  background: #aa4b6b;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #C33764;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 
 }
 h1, h2 {
   font-weight: normal;
+  color:white;
 }
 h5 {
    margin-bottom: 0px;
@@ -112,8 +116,36 @@ a {
 }
 .delete:hover {
    color: red;
+   }
+   .btn {
+    
+     background:#1D2671;
+  
+   }
+   .btn:hover {
+     background:rgb(42, 60, 218);
+     
+   }
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: rgb(255, 193, 222); /* Pink */
+  }
 }
 
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: rgb(169, 212, 248); /* Blue */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: rgb(211, 178, 255); /* Violet */
+  }
+}
 
 
 </style>
