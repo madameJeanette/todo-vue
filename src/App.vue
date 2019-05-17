@@ -69,8 +69,8 @@ export default {
  },
   data () {
     return {
-      inputField: '', //show input in  input field to user
-      todoList: [] //show input array to user
+      inputField: '', //return input in  input field to user
+      todoList: [] //return input array to user
     }
   }
 }
@@ -84,12 +84,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  
   background: #C33764;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
 
 }
 h1, h2 {
@@ -101,12 +99,14 @@ h5 {
 }
 ul {
   list-style-type: none;
-  padding: 0;
-}
+  padding: 20px;
+  justify-content: center;
+  }
 li {
   display: inline-block;
-  margin: 0 10px;
-}
+  margin: 0px;
+  
+ }
 a {
   color: #42b983;
 }
@@ -117,15 +117,15 @@ a {
 .delete:hover {
    color: red;
    }
-   .btn {
-    
-     background:#1D2671;
+.btn {
+  background:rgb(26, 106, 197); 
+  
   
    }
-   .btn:hover {
-     background:rgb(42, 60, 218);
-     
-   }
+.btn:hover {
+  background:#1D2671;
+  }
+  
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   body {
@@ -143,7 +143,7 @@ a {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   body {
-    background-color: rgb(211, 178, 255); /* Violet */
+    background-color: rgb(218, 191, 253); /* Violet */
   }
 }
 
