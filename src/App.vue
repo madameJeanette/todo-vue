@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" width="75px" height="75px">
-    <h1 class="mt-3">Vue.js Todo List</h1>
+    <img src="./assets/cat-logo-01.png" width="100px" height="75px">
+    <h1 class="mt-3">To do's</h1>
     <div class="container">
 
       <section>
@@ -24,7 +24,8 @@
                         <span v-else class="col-sm-8">
                            <h5>{{ todo.name }}</h5>
                         </span>
-                        <span @click="deleteTodo(todo)" class="offset-sm-1 col-sm-2 delete text-right">X</span>
+                        <span @click="deleteTodo(todo)" class="offset-sm-1 col-sm-2 delete text-right">X</span> 
+                        <!-- click listener -->
                       </div>
                    </li>
                 </ul>
@@ -81,6 +82,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background: #aa4b6b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 h1, h2 {
   font-weight: normal;
@@ -106,4 +111,7 @@ a {
 .delete:hover {
    color: red;
 }
+
+
+
 </style>
